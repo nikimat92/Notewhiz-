@@ -90,7 +90,7 @@ export function SnapshotTool({
     } else if (mode !== 'area' && isSelectingArea) {
       setIsSelectingArea(false);
     }
-  }, [mode]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [mode]); // eslint-disable-line react-hooks/exhaustive-deps -- setIsSelectingArea is a stable callback ref; including it would cause infinite re-renders when the parent re-renders
 
   const handleModeChange = (newMode: Mode) => {
     setMode(newMode);

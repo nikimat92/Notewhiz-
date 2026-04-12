@@ -1,7 +1,7 @@
 /**
  * Academic Flashcard Generator — 4-Strategy System
  *
- * Generates flashcards via four parallel GPT-4o calls, each targeting
+ * Generates flashcards via four sequential GPT-4o calls, each targeting
  * a different cognitive layer:
  *   1. Terminology  (40%) — key terms and definitions
  *   2. Concepts     (30%) — frameworks, principles, how/why
@@ -95,6 +95,8 @@ export async function generateAcademicFlashcards(
   type Response = { flashcards: AcademicFlashcard[] };
   const allCards: AcademicFlashcard[] = [];
 
+  // Each strategy call is sequential — results are accumulated into allCards.
+  // Falls back to a single call if any strategy throws.
   try {
     // Strategy 1: Terminology
     const terminology = await generateJSON<Response>(

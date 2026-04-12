@@ -47,7 +47,7 @@ export type QuizQuestion = {
   question: string;
   options: string[];        // Always length 4
   correctIndex: number;     // 0–3
-  explanation?: string;
+  explanation: string;      // Required — enforced by JSON schema
 };
 
 export type QuizJSON = {
