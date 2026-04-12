@@ -1,5 +1,17 @@
 # NoteWhiz+ — Feature Reference
 
+## Contents
+
+- [Upload & Ingestion](#upload--ingestion)
+- [AI Summarization](#ai-summarization)
+- [Flashcard Generation (4-Strategy System)](#flashcard-generation-4-strategy-system)
+- [Spaced Repetition (Leitner System)](#spaced-repetition-leitner-system)
+- [PDF Reader](#pdf-reader)
+- [AI Chat & Tutor](#ai-chat--tutor)
+- [Quiz Engine](#quiz-engine)
+- [Language Learning](#language-learning)
+- [Study Mode Dashboard](#study-mode-dashboard)
+
 ## Upload & Ingestion
 
 | Format | How it works |
