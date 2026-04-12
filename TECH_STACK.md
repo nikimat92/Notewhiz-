@@ -20,6 +20,7 @@ Every technology choice has a reason.
 |-----------|-----|
 | **Next.js Route Handlers** | Co-located with the UI. No separate Express server. Edge-deployable. |
 | **Prisma ORM** | Type-safe DB queries generated from schema. Migrations via `prisma migrate`. `zod-prisma` for validated input. |
+| **Zod** | Runtime schema validation for AI output. `response_format.json_schema` at the OpenAI API level + Zod types in the codebase prevent malformed AI responses from reaching the database. |
 | **Supabase Auth** | Row-Level Security built in. Magic link + OAuth with zero auth server to run. |
 | **Supabase Storage** | S3-compatible file storage with access policies. One platform for auth, DB, and storage. |
 | **Python FastAPI** (OCR microservice) | Python ecosystem has better OCR tooling (`pytesseract`, `pillow`). Isolated as a microservice so it doesn't bloat the Node process. |
@@ -28,7 +29,7 @@ Every technology choice has a reason.
 
 | Technology | Why |
 |-----------|-----|
-| **OpenAI GPT-4o** | Best structured JSON output reliability for flashcard/quiz generation. `response_format: { type: 'json_schema' }` enforces schema at the model level. |
+| **OpenAI GPT-4o** | Best structured JSON output reliability for flashcard/quiz generation. `response_format: { type: 'json_schema' }` enforces output structure at the model level. |
 | **Google Gemini Pro** | Google Search grounding is unique — no other model can cite live web sources natively. Used for the tutor agent specifically. |
 | **Google Gemini Flash** | Low latency for quick chat. GPT-4o is overkill for conversational Q&A. |
 | **OpenAI Whisper** | Best-in-class audio transcription accuracy. `whisper-large-v3-turbo` handles accented speech and technical terminology well. |
