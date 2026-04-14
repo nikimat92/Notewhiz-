@@ -12,9 +12,10 @@
 
 ## Demo
 
-[![NoteWhiz Demo](https://img.shields.io/badge/Watch_Demo-Loom-625DF5?style=for-the-badge&logo=loom)](REPLACE_WITH_LOOM_URL)
+[![NoteWhiz Demo — Reader & AI Chat](https://img.shields.io/badge/Demo_1%3A_Reader_%26_AI_Chat-Loom-625DF5?style=for-the-badge&logo=loom)](https://www.loom.com/share/ff8a502147984097bbff7991563560b5)
+[![NoteWhiz Demo — Study Mode](https://img.shields.io/badge/Demo_2%3A_Study_Mode-Loom-625DF5?style=for-the-badge&logo=loom)](https://www.loom.com/share/6a2334d7a83b4249a9f19b99bde17747)
 
-> Click the badge above to watch a full walkthrough of the app.
+> Click the badges above to watch full walkthroughs of the app.
 
 ---
 
